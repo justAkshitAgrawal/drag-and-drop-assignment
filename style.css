@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px dashed white;
+  border-radius: 5px;
+  padding: 5rem;
+  margin: 1rem;
+  min-height: 300px;
+  min-width: 100px;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: grab;
+  text-align: center;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.reset_btn {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
